@@ -131,7 +131,7 @@ const setupquiz = () =>{
     }
     
     //高難易度表示
-    if(quiz[quizNumber].hasOwnProperty('highlevel')){
+    if(quiz[quizNumber].hasOwnProperty('level')){
         $level.textContent = '高難度';
         $body.classList.add('body_highlevel');
         $questionframe.classList.add('questionframe_highlevel');
