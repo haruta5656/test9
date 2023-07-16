@@ -290,7 +290,9 @@ body{
     width: 370px;
     margin: auto;
 }
-
+#extra span{
+    display: inline-block;
+}
 .don{
     font-size: 80px;
     color: #000;
