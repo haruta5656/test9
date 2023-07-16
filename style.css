@@ -5,7 +5,13 @@ body{
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+.option-btn,#input{
+    font-family: 'M PLUS 1p', sans-serif;
+}
 
+#decide,#pass,.order,#extra,p.assdecide{
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
 .relative{
     position: relative;
@@ -198,13 +204,7 @@ body{
     vertical-align: middle;
 }
 
-.option-btn,#input{
-    font-family: 'M PLUS 1p', sans-serif;
-}
 
-#decide,#pass,.order,#extra{
-    font-family: 'Noto Sans JP', sans-serif;
-}
 
 
 /* jsで追加 */
