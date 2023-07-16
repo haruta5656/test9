@@ -238,7 +238,7 @@ const selectanswer = ()=>{
 //記述答え入力
 //半角を全角に変換
 function zenkaku2Hankaku(str) {
-    return str.replace(/[A-Za-z0-9]/g, function(s) {
+    return str.replace(/[0-9]/g, function(s) {
         return String.fromCharCode(s.charCodeAt(0) + 0xFEE0);
     });
 }

@@ -245,8 +245,9 @@ body{
 
 
 .resultbody{
-    height: 100vh;
-    background: linear-gradient(#fec400 ,#ec8b04);
+    /* height: 100vh; */
+    /* background: linear-gradient(#fec400 200px,#ec8b04); */
+    background-color: #ffbd01 ;
     
 }
 
@@ -434,6 +435,7 @@ letter-spacing: -13px;
         box-shadow: 0 0 0 2px white;
         box-sizing: border-box;
         padding: 0;
+        color: #000;
     }
 
     .modal-container button:nth-of-type(1){
