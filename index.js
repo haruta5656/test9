@@ -440,7 +440,7 @@ const timer = (settime)=>{
 
 
 let quiz = normalquiz;
-timer(600);
+timer(3600);
 setupquiz ();
 selectanswer();
 inputanswer();
