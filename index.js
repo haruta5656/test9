@@ -98,7 +98,7 @@ const setupquiz = () =>{
         if(Array.isArray(quiz[quizNumber].correct)){
             //一問多答
             questiontype = '【一問多答】';
-            if(quiz[quizNumber].questiontype === '並べ替え'){
+            if(quiz[quizNumber].questiontype === '並び替え'){
                 //並び替え
                 questiontype = '【並び替え】';
                 
@@ -192,8 +192,8 @@ const selectanswer = ()=>{
             }
             
         }else {
-            //並べ替え問題
-            if(quiz[quizNumber].questiontype === '並べ替え'){
+            //並び替え問題
+            if(quiz[quizNumber].questiontype === '並び替え'){
                 e.currentTarget.classList.toggle('clicked');
                 e.currentTarget.firstChild.classList.add('order');
 
@@ -201,7 +201,7 @@ const selectanswer = ()=>{
                     answerorder.push(e.currentTarget.textContent);
                     e.currentTarget.firstChild.textContent = answerorder.length;                                                        
                 }else{
-                    //並べ替え番号変わる
+                    //並び替え番号変わる
                     for(let i = 0; i < $button.length; i++){
                         if($button[i].firstChild.textContent > e.currentTarget.firstChild.textContent){
                             $button[i].firstChild.textContent = Number($button[i].firstChild.textContent) - 1;
@@ -269,7 +269,7 @@ const judge = ()=>{
             //選択問題
             if(Array.isArray(quiz[quizNumber].correct)){
 
-                if(quiz[quizNumber].questiontype === '並べ替え'){
+                if(quiz[quizNumber].questiontype === '並び替え'){
                     //並び替え
                     if(answerorder.toString() === quiz[quizNumber].correct.toString()){
                         score++;
