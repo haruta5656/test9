@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ナレッジキング予想問題1</title>
+    <link rel="stylesheet" href="../css/sanitize.css">
+    <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="quiz.js" defer></script>
+    <script src="index.js" defer></script>
+    <link rel="icon" href="icon-32.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+</head>
+<body id="body">
+
+    <div id="main">
+        <div class="relative">
+            <span id="timer"></span>
+            <span id="level"></span>
+            <div id="questionNumber"><span></span><span id="numberofquestion"></span></div>               
+        </div>
+        
+
+        <div id="questionframe" class="questionframe">   
+            <div id="questiontype"></div> 
+            <div id="questionbox">
+                <div id="question"></div>
+            </div>   
+        </div>
+        
+    
+        <div id="options-box">
+            <button type="button" class="option-btn" ></button>
+            <button type="button" class="option-btn" ></button>
+            <button type="button" class="option-btn" ></button> 
+            <button type="button" class="option-btn" ></button>
+        </div>
+        
+        
+        <input type="text" placeholder="テキストを入力" id="input" >
+        
+    
+        
+        <div class="decide-box">
+            <button  type="button" id="decide" disabled>決定!!</button>
+            <button type="button" id="pass" >パスする</button>
+        </div>
+        
+        <div class="modal hidden">
+            <div class="modal-container">
+                <div>一度パスすると、戻って回答することは出来ません。<br>よろしいですか？</div>
+                <button class="passdecide">はい</button>
+                <button class="passdecide">いいえ</button>
+            </div>           
+        </div>
+
+
+        
+    </div>
+    
+    <div id="finish">
+        <div id="result"></div>
+        <div id="extrabox">
+            <span>ド</span><span>ン!!</span><button type="button" id="extra">エクストラステージへ!!</button>
+        </div>
+        
+        <div id="resultbox">
+            <div>＜解答一覧＞</div>
+            <div id="resultgrid">
+                <div>番号</div>
+                <div>正誤</div>
+                <div>解答</div>
+                <div>正答</div>
+            </div>
+            
+
+        </div>
+        
+    </div>
+
+
+
+</body>
+</html>
